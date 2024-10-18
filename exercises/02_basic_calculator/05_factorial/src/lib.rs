@@ -10,6 +10,15 @@
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
 
+/// Given a non-negative integer `n`, return `n!`, the factorial of `n`.
+fn factorial(n: u32) -> u32 {
+    if n == 0 {
+        1
+    } else {
+        n * factorial(n - 1)
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use crate::factorial;
